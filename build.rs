@@ -21,7 +21,7 @@ fn link_dobby() {
         _ => &target_os,
     };
     let arch_dir = match target_arch.as_str() {
-        "armeabi" => "armv7",
+        "arm" => "armv7",
         "aarch64" => "arm64",
         _ => &target_arch,
     };
