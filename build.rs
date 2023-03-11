@@ -17,7 +17,7 @@ fn link_dobby() {
     let target_arch = std::env::var("CARGO_CFG_TARGET_ARCH").unwrap();
 
     let os_dir = match target_os.as_str() {
-        "macos" => "darwin",
+        "macos" | "ios" => "darwin",
         _ => &target_os,
     };
     let arch_dir = match target_arch.as_str() {
